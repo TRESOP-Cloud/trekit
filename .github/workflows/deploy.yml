@@ -15,8 +15,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Deploy Autoloader Hub to GitHub Pages
+      - name: Deploy Installer Page to GitHub Pages Root
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: frontend/autoloader # Points directly to the main dashboard menu folder
+          folder: frontend/installer-page # Places the main index.html onto your web root
           branch: gh-pages # Deploys straight to your web publishing branch
